@@ -45,7 +45,7 @@ class Mallard:
         :return:
         """
         type = random.choices(population=[None, "Sticker", "Responce"],
-                              weights=[self.RANDOM_ANSWER_RATE, 0.5, 0.5])
+                              weights=[self.RANDOM_ANSWER_RATE, 1, 1])
         if type == "Responce":
             return random.choice(RANDOM_RESPONCES_DICT), False
         if type == "Sticker":
